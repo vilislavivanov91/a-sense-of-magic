@@ -2,8 +2,6 @@
 
 body {
     margin: 0;
-    font-family: 'Indie Flower',
-    cursive;
 }
 
 /*@_@_@_@ END OF COMMON @_@_@_@*/
@@ -11,7 +9,7 @@ body {
 /* ||||||||||||||||||||||||||||||||||||||||||||| */
 
 
-/*@_@_@_@ HEADER @_@_@_@*/
+/*@_@_@_@ HEADER TEXT@_@_@_@*/
 
 .image-header{
     width: 100%;
@@ -28,6 +26,8 @@ body {
 .header-text-wrapper {
     font-family: 'Muli', sans-serif;
     margin: 90px 100px;
+    display: block;
+
     /* height: 300px; */
 }
 
@@ -49,6 +49,7 @@ body {
 }
 
 .header-text-wrapper hr:first-of-type {
+    margin-top: 10px;
     margin-bottom: 0;
 }
 
@@ -110,5 +111,60 @@ body {
 }
 
 /*@_@_@_@ END OF HEADER @_@_@_@*/
+
+/* ||||||||||||||||||||||||||||||||||||||||||||| */
+
+/*@_@_@_@ NAVIGATION @_@_@_@*/
+
+.navigation {
+    /* position: fixed; */
+    width: 100%;
+    background-color: rgba(0, 0, 0, .7);
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    justify-content: space-around;
+}
+
+.navigation a {
+    color: white;
+    font-size: 1.2em;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-left: 1px solid white;
+    width: 100%;
+    text-align: center;
+}
+
+.navigation h2 {
+}
+
+.navigation-main {
+    display: flex;
+    align-items: center;
+    flex: 2 2 auto;
+    justify-content: space-around;
+}
+
+.navigation-main a {
+}
+
+.navigation-main a:first-of-type {
+    border: none;
+}
+
+.navigation-secondary {
+    display: flex;
+    align-items: center;
+    flex: 1 1 auto;
+    justify-content: space-around;
+}
+
+.navigation-secondary a {
+    font-size: .8em;
+}
+
+/*@_@_@_@ END OF NAVIGATION @_@_@_@*/
 
 /* ||||||||||||||||||||||||||||||||||||||||||||| */
