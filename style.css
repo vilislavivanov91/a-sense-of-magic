@@ -2,6 +2,12 @@
 
 body {
     margin: 0;
+    background: #e8e8e8;
+}
+
+.container {
+    margin: 30px 50px;
+    background-color: white;
 }
 
 /*@_@_@_@ END OF COMMON @_@_@_@*/
@@ -181,6 +187,76 @@ body {
     display: none;
 }
 
+@media (max-width: 550px) {
+    .navigation a {
+        border: none;
+    }
+}
+
 /*@_@_@_@ END OF NAVIGATION @_@_@_@*/
+
+/* ||||||||||||||||||||||||||||||||||||||||||||| */
+
+/*@_@_@_@ ABOUT @_@_@_@*/
+
+.about-wrapper {
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.about-wrapper h1 {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    color: white;
+    background-color: rgba(0, 0, 0, .4);
+}
+
+.about-me {
+    display: flex;
+}
+
+.about-image {
+    margin: 0 70px 30px 30px; 
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);    
+}
+
+.about-contact {
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid black;
+    border-top: none;
+}
+
+.about-contact a:first-of-type {
+    color: #3b5998;
+}
+
+.about-contact a:last-child {
+    color: rgb(20, 18, 18);
+}
+
+.about-contact svg {
+    font-size: 2em;
+}
+
+.about-info {
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.about-info h2 {
+    align-self: flex-end;
+}
+
+.about-info p {
+    margin-bottom: 0;
+    line-height: 40px;
+}
+
+/*@_@_@_@ END OF ABOUT @_@_@_@*/
 
 /* ||||||||||||||||||||||||||||||||||||||||||||| */
