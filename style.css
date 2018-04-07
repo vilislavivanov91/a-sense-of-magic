@@ -14,26 +14,22 @@ body {
 
 /* ||||||||||||||||||||||||||||||||||||||||||||| */
 
-
 /*@_@_@_@ HEADER TEXT@_@_@_@*/
 
-.image-header{
+.image-header {
     width: 100%;
     min-height: 700px;
-    background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)),
-    url("Images/david-von-diemar-newsize-unsplash.jpg");
+    background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url("Images/david-von-diemar-newsize-unsplash.jpg");
     background-repeat: no-repeat;
-    background-size: cover; 
+    background-size: cover;
     background-attachment: fixed;
     display: inline-block;
-    
 }
 
 .header-text-wrapper {
     font-family: 'Muli', sans-serif;
     margin: 90px 100px;
     display: block;
-
     /* height: 300px; */
 }
 
@@ -69,12 +65,12 @@ body {
 
 .header-text p {
     margin: 0 100px;
-    margin-top: 3   0px;
+    margin-top: 3 0px;
     line-height: 200%;
 }
 
 .header-text a {
-    font-size: 1.2em;    
+    font-size: 1.2em;
     align-self: flex-end;
     margin: 25px 90px 15px auto;
     padding: 0 30px;
@@ -100,17 +96,13 @@ body {
     .header-text-wrapper {
         margin: 50px 0 0 0;
     }
-
     .header-text h1 {
         display: inline-block;
         margin: 0;
     }
-
     .header-text p {
         margin: 0;
     }
-
-
     .header-text a {
         margin-right: 20px;
     }
@@ -146,7 +138,7 @@ body {
 }
 
 .navigation a:hover {
-    background-color:rgba(255, 255, 255, .7);
+    background-color: rgba(255, 255, 255, .7);
     color: black;
 }
 
@@ -161,8 +153,7 @@ body {
     justify-content: space-around;
 }
 
-.navigation-main a {    
-}
+.navigation-main a {}
 
 .navigation-main a:first-of-type {
     border: none;
@@ -210,7 +201,7 @@ body {
     padding-bottom: 15px;
     padding-top: 15px;
     color: white;
-    background-color: rgba(0, 0, 0, .4);
+    background-color: rgb(18, 49, 50);
 }
 
 .about-me {
@@ -218,8 +209,8 @@ body {
 }
 
 .about-image {
-    margin: 0 70px 30px 30px; 
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);    
+    margin: 0 70px 30px 30px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .about-contact {
@@ -258,5 +249,115 @@ body {
 }
 
 /*@_@_@_@ END OF ABOUT @_@_@_@*/
+
+/* ||||||||||||||||||||||||||||||||||||||||||||| */
+
+/*@_@_@_@ FOOTER @_@_@_@*/
+
+.footer-wrapper {
+    background-color: rgb(18, 49, 50);
+    color: #B97F6D;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.footer-wrapper a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 2 1 auto;
+}
+
+.footer-logo h2 {
+    color: #B97F6D;
+}
+
+.footer-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 3 1 auto;
+}
+
+.footer-main h1 {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+
+.footer-main input[type="email"] {
+    height: 30px;
+    width: 250px;
+    border-width: 0px;
+    border-color: rgba(185, 127, 109, 1);
+    background-color: rgba(62, 90, 91, 0.59);
+}
+
+.footer-main input::-webkit-input-placeholder {
+    color: rgba(185, 127, 109, 1);
+    padding-left: 10px;
+}
+
+.footer-main input::-moz-placeholder {
+    color: rgba(185, 127, 109, 1);
+    padding-left: 10px;    
+}
+
+.footer-main input:-ms-input-placeholder {
+    color: rgba(185, 127, 109, 1);
+    padding-left: 10px;    
+}
+
+.footer-main input:-moz-placeholder {
+    color: rgba(185, 127, 109, 1);
+    padding-left: 10px;    
+}
+
+.footer-main button {
+    height: 36px;
+    margin-left: 10px;
+    background-color: transparent;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: rgba(185, 127, 109, 1);
+    border: 2px solid rgba(185, 127, 109, 1);
+}
+
+.footer-main button:hover {
+    background-color: rgba(185, 127, 109, 1);
+    color: rgb(15, 28, 29);
+}
+
+.footer-main .footer-text {
+    display: flex;  
+}
+
+.footer-secondary {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.footer-secondary svg {
+    font-size: 1.5em;
+}
+
+.footer-secondary p {
+    display: inline-block;
+    margin: 15px 5px;
+}
+
+#fb-icon {
+    color: #0f45b5;
+}
+/*@_@_@_@ END OF FOOTER @_@_@_@*/
 
 /* ||||||||||||||||||||||||||||||||||||||||||||| */
