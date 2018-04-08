@@ -6,8 +6,10 @@ body {
 }
 
 .container {
-    margin: 30px 50px;
     background-color: white;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    margin: 140px 50px;
+    
 }
 
 /*@_@_@_@ END OF COMMON @_@_@_@*/
@@ -19,7 +21,7 @@ body {
 .image-header {
     width: 100%;
     min-height: 700px;
-    background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url("Images/david-von-diemar-newsize-unsplash.jpg");
+    background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url("../Images/david-von-diemar-newsize-unsplash.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -190,9 +192,6 @@ body {
 
 /*@_@_@_@ ABOUT @_@_@_@*/
 
-.about-wrapper {
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-}
 
 .about-wrapper h1 {
     text-align: center;
@@ -202,6 +201,7 @@ body {
     padding-top: 15px;
     color: white;
     background-color: rgb(18, 49, 50);
+    /* Same as contact-me h1 */
 }
 
 .about-me {
@@ -210,8 +210,11 @@ body {
 
 .about-image {
     margin: 0 70px 30px 30px;
+    flex: 1 2 auto;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
+
+.about-image img {}
 
 .about-contact {
     display: flex;
@@ -249,6 +252,143 @@ body {
 }
 
 /*@_@_@_@ END OF ABOUT @_@_@_@*/
+
+/* ||||||||||||||||||||||||||||||||||||||||||||| */
+
+/*@_@_@_@ CONTACT @_@_@_@*/
+
+.contact-wrapper h1 {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    color: white;
+    background-color: rgb(18, 49, 50);
+}
+
+.contact-me {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contact-info {
+    margin: 50px;
+    flex: 0 1 350px;
+}
+
+.contact-facebook, .contact-phone, .contact-email {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    box-shadow: 0 4px 2px -2px rgba(62, 90, 91, 0.3);
+}
+
+.contact-me h2 {
+    font-size: 1em;
+    justify-self: flex-start;
+}
+
+.contact-info p {
+    margin: 0;
+    align-self: center;
+    justify-self: center;
+}
+
+.contact-form {
+    flex: 0 1 700px;
+}
+
+.contact-form form{
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input {
+    height: 30px;
+    border: 2px solid rgba(185, 127, 109, 1);
+}
+
+.contact-form textarea {
+    margin-bottom: 20px;
+    border: 2px solid rgba(185, 127, 109, 1);    
+}
+
+.contact-form input[type="submit"] {
+    background-color: white;
+    color: rgba(185, 127, 109, 1);    
+    transition: all .4s ease-in-out;
+    height: 40px;
+}
+
+.contact-form input::-webkit-input-placeholder {
+    color: rgba(185, 127, 109, 1);
+    padding-left: 10px;
+}
+
+.contact-form input::-moz-placeholder {
+    color: rgba(185, 127, 109, 1);
+    padding-left: 10px;
+}
+
+.contact-form input:-ms-input-placeholder {
+    color: rgba(185, 127, 109, 1);
+    padding-left: 10px;
+}
+
+.contact-form input:-moz-placeholder {
+    color: rgba(185, 127, 109, 1);
+    padding-left: 10px;
+}
+
+.contact-form textarea::-webkit-input-placeholder {
+    color: rgba(185, 127, 109, 1);
+    padding-left: 10px;
+}
+
+.contact-form textarea::-moz-placeholder {
+    color: rgba(185, 127, 109, 1);
+    padding-left: 10px;
+}
+
+.contact-form textarea:-ms-input-placeholder {
+    color: rgba(185, 127, 109, 1);
+    padding-left: 10px;
+}
+
+.contact-form textarea:-moz-placeholder {
+    color: rgba(185, 127, 109, 1);
+    padding-left: 10px;
+}
+
+
+.form-info {
+    display: flex;
+}
+
+.form-info input[type="text"] {
+    margin-right: 20px;
+}
+
+.form-info input {
+    flex: 1 1 auto;
+}
+
+#contact-subject {
+    margin: 10px 0;
+}
+
+
+
+@media (max-width: 700px) {
+    .contact-form {
+        flex: 0 1 auto;
+    }
+}
+
+/*@_@_@_@ END OF CONTACT @_@_@_@*/
 
 /* ||||||||||||||||||||||||||||||||||||||||||||| */
 
@@ -306,17 +446,17 @@ body {
 
 .footer-main input::-moz-placeholder {
     color: rgba(185, 127, 109, 1);
-    padding-left: 10px;    
+    padding-left: 10px;
 }
 
 .footer-main input:-ms-input-placeholder {
     color: rgba(185, 127, 109, 1);
-    padding-left: 10px;    
+    padding-left: 10px;
 }
 
 .footer-main input:-moz-placeholder {
     color: rgba(185, 127, 109, 1);
-    padding-left: 10px;    
+    padding-left: 10px;
 }
 
 .footer-main button {
@@ -327,15 +467,17 @@ body {
     padding-right: 20px;
     color: rgba(185, 127, 109, 1);
     border: 2px solid rgba(185, 127, 109, 1);
+    transition: all .4s ease-in-out;
 }
 
 .footer-main button:hover {
     background-color: rgba(185, 127, 109, 1);
     color: rgb(15, 28, 29);
+    cursor: pointer;
 }
 
 .footer-main .footer-text {
-    display: flex;  
+    display: flex;
 }
 
 .footer-secondary {
@@ -358,6 +500,7 @@ body {
 #fb-icon {
     color: #0f45b5;
 }
+
 /*@_@_@_@ END OF FOOTER @_@_@_@*/
 
 /* ||||||||||||||||||||||||||||||||||||||||||||| */
