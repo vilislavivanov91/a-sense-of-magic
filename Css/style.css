@@ -8,8 +8,7 @@ body {
 .container {
     background-color: white;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-    margin: 140px 50px;
-    
+    margin: 70px 50px;    
 }
 
 /*@_@_@_@ END OF COMMON @_@_@_@*/
@@ -223,7 +222,7 @@ body {
     border-top: none;
 }
 
-.about-contact a:first-of-type {
+#fb-ic  on-about {
     color: #3b5998;
 }
 
@@ -255,6 +254,72 @@ body {
 
 /* ||||||||||||||||||||||||||||||||||||||||||||| */
 
+/*@_@_@_@ RANDOM THREE PRODUCTS @_@_@_@*/
+
+.container-product {
+    margin: 70px 50px;
+    position: relative;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    
+}
+
+#show-more {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 50px;
+    width: 150px;
+}
+
+.container-product button {
+    height: 50px;
+    width: 150px;
+}
+
+.random-products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product {
+    position: relative;
+}
+
+.product-info-link {
+    text-align: center;
+    display: block;
+    width: 400px;
+    height: 80px;
+    position: absolute;
+    bottom: 100px;
+    background-color: rgba(0, 0, 0, .3);
+}
+
+.product-info-link a {
+    display: inline-block;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-top: 30px;
+}
+
+.product-info {
+    text-align: center;
+    border: 1px solid black;    
+}
+
+.first-product {
+}
+
+.random-products button {
+}
+
+
+/*@_@_@_@ END OF RANDOM THREE PRODUCTS @_@_@_@*/
+
+/* ||||||||||||||||||||||||||||||||||||||||||||| */
+
 /*@_@_@_@ CONTACT @_@_@_@*/
 
 .contact-wrapper h1 {
@@ -274,7 +339,8 @@ body {
 }
 
 .contact-info {
-    margin: 50px;
+    align-self: center;
+    margin: 0 auto;
     flex: 0 1 350px;
 }
 
@@ -290,6 +356,7 @@ body {
     justify-self: flex-start;
 }
 
+
 .contact-info p {
     margin: 0;
     align-self: center;
@@ -298,6 +365,9 @@ body {
 
 .contact-form {
     flex: 0 1 700px;
+    align-self: center;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .contact-form form{
@@ -317,14 +387,22 @@ body {
 }
 
 .contact-form input[type="submit"] {
-    background-color: white;
-    color: rgba(185, 127, 109, 1);    
+    background-color: rgba(185, 127, 109, 1);
+    color: white;    
     transition: all .4s ease-in-out;
     height: 40px;
+    letter-spacing: 1px;
+    /* text-transform: uppercase; */
+}
+
+.contact-form input[type="submit"]:hover {
+    cursor: pointer;
+    color: white;
+    background-color: rgba(155, 96, 78);
 }
 
 .contact-form input::-webkit-input-placeholder {
-    color: rgba(185, 127, 109, 1);
+    color: rgb(185, 127, 109, 1);
     padding-left: 10px;
 }
 
@@ -380,7 +458,9 @@ body {
     margin: 10px 0;
 }
 
-
+#fb-icon-contact {
+    color: #3b5998;
+}
 
 @media (max-width: 700px) {
     .contact-form {
@@ -477,14 +557,21 @@ body {
 }
 
 .footer-main .footer-text {
+    width: 40%;
     display: flex;
+    justify-content: space-between;
+}
+
+.footer-main p {
+    margin-bottom: 3px;
 }
 
 .footer-secondary {
     flex: 1 1 auto;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-end;
+    margin-right: 20px;
     justify-content: space-evenly;
 }
 
