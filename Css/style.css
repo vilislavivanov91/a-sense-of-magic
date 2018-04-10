@@ -3,14 +3,13 @@
 body {
     margin: 0;
     background: #e8e8e8;
-    font-family: 'Muli',
-    sans-serif;
+    font-family: 'Muli', sans-serif;
 }
 
 .container {
     background-color: white;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-    margin: 70px 50px;    
+    margin: 70px 50px;
 }
 
 .hidden {
@@ -18,8 +17,13 @@ body {
 }
 
 a {
-    font-family: 'Montserrat',
-    sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media (max-width: 550px) {
+    .container {
+        margin: 70px 0;
+    }
 }
 
 /*@_@_@_@ END OF COMMON @_@_@_@*/
@@ -31,10 +35,11 @@ a {
 .image-header {
     width: 100%;
     min-height: 700px;
-    background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url("../Images/david-von-diemar-newsize-unsplash.jpg");
+    background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url("../Images/yeshi-kangrang-258234-unsplash-new.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    background-position: 50% 40%;
     display: inline-block;
 }
 
@@ -99,13 +104,17 @@ a {
 
 @media (max-width: 900px) {
     .header-text-wrapper {
-        margin: 90px 50px;
+        color: red;
+        margin: 120px 50px;
+    }
+    .header-text p {
+        margin: 0;
     }
 }
 
 @media (max-width: 550px) {
     .header-text-wrapper {
-        margin: 50px 0 0 0;
+        margin: 150px 0 0 0;
     }
     .header-text h1 {
         display: inline-block;
@@ -126,14 +135,14 @@ a {
 /*@_@_@_@ NAVIGATION @_@_@_@*/
 
 .navigation {
-    /* position: fixed; */
+    position: fixed;
     width: 100%;
-    background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, 0.281));
-    /* background-color: rgba(0, 0, 0, .7); */
+    background: rgb(18, 49, 50);
     display: flex;
     flex-wrap: wrap;
     color: white;
     justify-content: space-around;
+    z-index: 1;
 }
 
 .navigation a {
@@ -164,8 +173,6 @@ a {
     justify-content: space-around;
 }
 
-.navigation-main a {}
-
 .navigation-main a:first-of-type {
     border: none;
 }
@@ -175,10 +182,6 @@ a {
     align-items: center;
     flex: 1 1 auto;
     justify-content: space-around;
-}
-
-.navigation-secondary a {
-    /* font-size: .8em; */
 }
 
 .dropdown-menu {
@@ -199,83 +202,22 @@ a {
 
 /* ||||||||||||||||||||||||||||||||||||||||||||| */
 
-/*@_@_@_@ ABOUT @_@_@_@*/
+/*@_@_@_@ RANDOM THREE PRODUCTS @_@_@_@*/
 
+.container-product {
+    position: relative;
+    padding-bottom: 50px;
+}
 
-.about-wrapper h1 {
+.container-product h1 {
     text-align: center;
     text-transform: uppercase;
-    letter-spacing: 5px;
+    letter-spacing: 10px;
     padding-bottom: 15px;
     padding-top: 15px;
     color: white;
     background-color: rgb(18, 49, 50);
     /* Same as contact-me h1 */
-}
-
-.about-me {
-    display: flex;
-}
-
-.about-image {
-    margin: 0 70px 30px 30px;
-    flex: 1 2 auto;   
-}
-
-.about-image img {
-    border-radius: 30px;
-}
-
-.about-contact {
-    display: flex;
-    justify-content: space-around;
-    border: 1px solid rgba(0, 0, 0, .2);
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-    border-top: none;
-}
-
-#fb-icon-about {
-    color: #3b5998;
-}
-
-.about-contact a:last-child {
-    color: #666666;
-}
-
-.about-contact svg {
-    font-size: 2em;
-}
-
-.about-info {
-    margin-right: 30px;
-    color: #666666;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-.about-info h2 {
-    align-self: flex-end;
-}
-
-.about-info p {
-    margin-bottom: 0;
-    line-height: 40px;
-}
-
-/*@_@_@_@ END OF ABOUT @_@_@_@*/
-
-/* ||||||||||||||||||||||||||||||||||||||||||||| */
-
-/*@_@_@_@ RANDOM THREE PRODUCTS @_@_@_@*/
-
-.container-product {
-    margin: 70px 50px;
-    background-color: white;
-    position: relative;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-    padding-bottom: 50px;
-    
 }
 
 #show-more {
@@ -300,10 +242,13 @@ a {
 }
 
 .product img {
+    height: 450px;
+    width: 450px;
+    max-width: 400px;
+    max-height: 450px;
     border-radius: 30px;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.3);
 }
-
 
 .product-image {
     display: block;
@@ -315,7 +260,7 @@ a {
     border-radius: 30px;
 }
 
-.product-icon-wrapper  {
+.product-icon-wrapper {
     display: flex;
     justify-content: center;
     margin-top: 200px;
@@ -339,7 +284,7 @@ a {
     margin-right: 80px;
 }
 
-.product-plus-icon, 
+.product-plus-icon,
 .product-cart-icon {
     border: 1px solid white;
 }
@@ -367,7 +312,7 @@ a {
 }
 
 .product-info {
-    margin: 0 55px;    
+    margin: 0 55px;
     font-size: 1em;
     text-align: center;
     display: flex;
@@ -378,7 +323,7 @@ a {
 .product-info a {
     text-decoration: none;
     color: #666666;
-    transition: all .3s linear;    
+    transition: all .3s linear;
 }
 
 .product-info a:hover {
@@ -389,14 +334,113 @@ a {
     margin: 0;
     align-self: center;
 }
-.first-product {
-}
 
-.random-products button {
+@media (max-width: 530px) {
+    .product img {
+        width: 200px;
+        height: 225px;
+    }
+    .product-image {
+        width: 200px;
+        height: 225px;
+    }
+    .product-icon-wrapper {
+        margin-top: 100px;
+    }
 }
-
 
 /*@_@_@_@ END OF RANDOM THREE PRODUCTS @_@_@_@*/
+
+/* ||||||||||||||||||||||||||||||||||||||||||||| */
+
+/*@_@_@_@ BACKGROUND-IMAGE @_@_@_@*/
+
+.background-image-main {
+    width: 100%;
+    min-height: 700px;
+    background: url("../Images/kristina-flour-185599-unsplash-new.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: inline-block;
+}
+
+/*@_@_@_@ END OF BACKGROUND-IMAGE @_@_@_@*/
+
+/* ||||||||||||||||||||||||||||||||||||||||||||| */
+
+/*@_@_@_@ ABOUT @_@_@_@*/
+
+.about-wrapper h1 {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    color: white;
+    background-color: rgb(18, 49, 50);
+    /* Same as contact-me h1 */
+}
+
+.about-me {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    /* overflow: auto; */
+}
+
+.about-image {
+    max-width: 400px;
+    /* float: left; */
+    margin: 0 70px 30px 30px;
+    flex: 1 2 auto;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 30px;
+}
+
+.about-contact {
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid rgba(0, 0, 0, .2);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-top: none;
+}
+
+#fb-icon-about {
+    color: #3b5998;
+}
+
+.about-contact a:last-child {
+    color: #666666;
+}
+
+.about-contact svg {
+    font-size: 2em;
+}
+
+.about-info {
+    max-width: 400px;
+    margin: 10px;
+    color: #666666;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.about-info h2 {
+    align-self: flex-end;
+}
+
+.about-info p {
+    margin-bottom: 0;
+    /* line-height: 40px; */
+}
+
+/*@_@_@_@ END OF ABOUT @_@_@_@*/
 
 /* ||||||||||||||||||||||||||||||||||||||||||||| */
 
@@ -405,7 +449,7 @@ a {
 .contact-wrapper h1 {
     text-align: center;
     text-transform: uppercase;
-    letter-spacing: 5px;
+    letter-spacing: 10px;
     padding-bottom: 15px;
     padding-top: 15px;
     color: white;
@@ -424,7 +468,9 @@ a {
     flex: 0 1 350px;
 }
 
-.contact-facebook, .contact-phone, .contact-email {
+.contact-facebook,
+.contact-phone,
+.contact-email {
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid rgba(0, 0, 0, .1);
@@ -436,7 +482,6 @@ a {
     justify-self: flex-start;
 }
 
-
 .contact-info p {
     margin: 0;
     align-self: center;
@@ -444,13 +489,14 @@ a {
 }
 
 .contact-form {
-    flex: 0 1 700px;
+    max-width: 700px;
+    flex: 0 1 auto;
     align-self: center;
     max-width: 1000px;
     margin: 0 auto;
 }
 
-.contact-form form{
+.contact-form form {
     margin: 50px;
     display: flex;
     flex-direction: column;
@@ -458,17 +504,17 @@ a {
 
 .contact-form input {
     height: 30px;
-    border: 2px solid rgba(185, 127, 109, 1);
+    border: 2px solid #B97F6D;
 }
 
 .contact-form textarea {
     margin-bottom: 20px;
-    border: 2px solid rgba(185, 127, 109, 1);    
+    border: 2px solid #B97F6D;
 }
 
 .contact-form input[type="submit"] {
-    background-color: rgba(185, 127, 109, 1);
-    color: white;    
+    background-color: #B97F6D;
+    color: white;
     transition: all .4s ease-in-out;
     height: 40px;
     letter-spacing: 1px;
@@ -478,49 +524,49 @@ a {
 .contact-form input[type="submit"]:hover {
     cursor: pointer;
     color: white;
-    background-color: rgba(155, 96, 78);
+    background-color: rgb(161, 102, 84);
+    border: rgb(161, 102, 84);
 }
 
 .contact-form input::-webkit-input-placeholder {
-    color: rgb(185, 127, 109, 1);
+    color: #B97F6D;
     padding-left: 10px;
 }
 
 .contact-form input::-moz-placeholder {
-    color: rgba(185, 127, 109, 1);
+    color: #B97F6D;
     padding-left: 10px;
 }
 
 .contact-form input:-ms-input-placeholder {
-    color: rgba(185, 127, 109, 1);
+    color: #B97F6D;
     padding-left: 10px;
 }
 
 .contact-form input:-moz-placeholder {
-    color: rgba(185, 127, 109, 1);
+    color: #B97F6D;
     padding-left: 10px;
 }
 
 .contact-form textarea::-webkit-input-placeholder {
-    color: rgba(185, 127, 109, 1);
+    color: #B97F6D;
     padding-left: 10px;
 }
 
 .contact-form textarea::-moz-placeholder {
-    color: rgba(185, 127, 109, 1);
+    color: #B97F6D;
     padding-left: 10px;
 }
 
 .contact-form textarea:-ms-input-placeholder {
-    color: rgba(185, 127, 109, 1);
+    color: #B97F6D;
     padding-left: 10px;
 }
 
 .contact-form textarea:-moz-placeholder {
-    color: rgba(185, 127, 109, 1);
+    color: #B97F6D;
     padding-left: 10px;
 }
-
 
 .form-info {
     display: flex;
@@ -543,8 +589,26 @@ a {
 }
 
 @media (max-width: 700px) {
+    
+}
+
+
+@media (max-width: 550px) {
+    .contact-form form {
+        margin: 15px 0;
+    }
+}
+
+@media (max-width: 390px) {
+    .form-info {
+        flex-wrap: wrap;
+    }
+
+    input[type="email"] {
+        margin-top: 10px;
+    } 
     .contact-form {
-        flex: 0 1 auto;
+        width: 300px;
     }
 }
 
@@ -668,6 +732,29 @@ a {
     color: #0f45b5;
 }
 
+@media (max-width: 850px) {
+    .footer-wrapper {
+        flex-wrap: wrap;
+    }
+
+    .footer-secondary {
+        align-items: center;
+    }
+
+    .footer-form form{
+        margin-left: 80px;
+    }
+
+    .footer-form input[type="email"] {
+        width: auto;
+    }
+}
+
+@media (max-width: 330px) {
+    .footer-form form {
+        margin-left: 75px;
+    }
+}
 /*@_@_@_@ END OF FOOTER @_@_@_@*/
 
 /* ||||||||||||||||||||||||||||||||||||||||||||| */
