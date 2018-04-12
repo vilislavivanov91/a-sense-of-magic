@@ -8,15 +8,3 @@ fs.readFile('file.path', (err, data) => {
 
     console.log(data.byteLength)
 })
-
-let a = 'some string variable'
-
-function arrSum (arr) {
-    let sum = 0
-
-    arr.forEach(element => {
-        sum += element;
-    });
-
-    return sum;
-}
